@@ -1,2 +1,5 @@
-# don't manage the secret git api key in the repository
-/secrets/git_key.txt
+# prevent deployment logs from being saved in the repository
+logs/*.log
+
+# secrets file
+secrets/secrets.sh
