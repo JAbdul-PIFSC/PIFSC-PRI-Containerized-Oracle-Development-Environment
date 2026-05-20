@@ -64,7 +64,7 @@ To do:
 			X Container Deployment Scripts
 
 
-_ Convert dependencies to submodules:
+X Convert dependencies to submodules:
 	X CODE
 		X update documentation
 		X test scenarios
@@ -122,21 +122,41 @@ _ Convert dependencies to submodules:
 				X code updates:
 					X update the path to modules/CDS
 					X update URL to github for CDS
-			_ LHP
-				_ pull upstream changes from CU
-				_ merge changes and tag revision
+			X LHP
+				X pull upstream changes from CU
+				X merge changes and tag revision
 				implemented dependencies:
 					X LHP
 					X CDS
 					X CU
 					X DSC
 				X update documentation
-				X_ test scenarios (12/18/25)
+				X test scenarios (12/19/25)
 				X documentation:
 					X update the documentation with the CDS github link and folder paths for all submodules
 					X update the path to modules/CDS
 				X code updates:
 					X update the path to modules/CDS
+
+
+			_ PARR Tools
+				_ pull upstream changes from CAS
+				_ merge changes and tag revision
+				_ implemented dependencies:
+					_ PICDM
+					_ CDS
+					_ CAS
+					_ DSC
+				_ create test data from ODS
+					_ save test data
+				_ update documentation
+				_ test scenarios ()
+				_ documentation:
+					_ update the documentation with the CDS github link and folder paths for all submodules
+					_ update the path to modules/CDS
+				_ code updates:
+					_ update the path to modules/CDS
+
 
 			
 	X update fork diagram 
@@ -144,7 +164,7 @@ _ Convert dependencies to submodules:
 		X include CUD
 		
 		
-	_ delete the CODE repos off of GitLab (confirm they are in GitHub first)
+	X delete the CODE repos off of GitLab (confirm they are in GitHub first)
 		CODE
 		PRI
 		CAS
@@ -153,18 +173,18 @@ _ Convert dependencies to submodules:
 		
 
 
-	_ convert docker apps to implement submodules (PHP shared library and CDS)
-		_ PLW
-			_ implement as docker compose with CODE
+	X convert docker apps to implement submodules (PHP shared library and CDS)
+		X PLW
+			X implement as docker compose with CODE
 		X PRI
 			X implement as docker compose with CODE
-		_ Staff Info App
-			_ implement as docker compose with CODE
+		X Staff Info App
+			X implement as docker compose with CODE
 		
-	_ CDS
+	X CDS
 		X update installation instructions to recommend implementing as a submodule
 		X migrate to github
-			_ update all submodule implementations:
+			X update all submodule implementations:
 				X PRI
 				X CODE
 				X PRI CODE
@@ -172,7 +192,7 @@ _ Convert dependencies to submodules:
 				X DSC CODE
 				X CU CODE
 				X LHP CODE
-				_ Container Maintenance Scripts
+				X Container Maintenance Scripts
 				
 	
 	

@@ -1,7 +1,7 @@
 # PIFSC PRI Oracle Developer Environment
 
 ## Overview
-The PIFSC Resource Inventory (PRI) Oracle Developer Environment (PCODE) project was developed to provide a custom containerized Oracle development environment (CODE) for the DSC.  This repository can be forked to extend the existing functionality to any data systems that depend on the DSC for both development and testing purposes.  
+The PIFSC Resource Inventory (PRI) Oracle Developer Environment (PCODE) project was developed to provide a custom containerized Oracle development environment (CODE) for the PRI.  This repository can be forked to extend the existing functionality to any data systems that depend on the PRI for both development and testing purposes.  
 
 ## Resources
 -   ### PCODE Version Control Information
