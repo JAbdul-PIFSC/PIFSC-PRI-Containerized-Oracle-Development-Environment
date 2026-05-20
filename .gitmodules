@@ -4,3 +4,6 @@
 [submodule "projects/DSC/modules/DSC"]
 	path = projects/DSC/modules/DSC
 	url = git@github.com:noaa-pifsc/PIFSC-DSC.git
+[submodule "projects/PRI/modules/PRI"]
+	path = projects/PRI/modules/PRI
+	url = git@github.com:noaa-pifsc/PIFSC-Resource-Inventory.git

@@ -1,0 +1,47 @@
+# override the secrets configuration
+secrets:
+  pri_db_username_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_db_username_secret
+    external: true
+  pri_db_password_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_db_password_secret
+    external: true
+  pri_ria_db_username_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_ria_db_username_secret
+    external: true
+  pri_ria_db_password_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_ria_db_password_secret
+    external: true
+  pri_gim_db_username_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_gim_db_username_secret
+    external: true
+  pri_gim_db_password_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_gim_db_password_secret
+    external: true
+  pri_git_api_key_secret:
+    name: ${COMPOSE_PROJECT_NAME}_pri_git_api_key_secret
+    external: true
+services:
+  # Override pifsc-resource-inventory configuration
+  pifsc-resource-inventory:
+    # specify the database network
+    environment:
+      DB_HOST: ${DBHOST}
+      DB_SERVICE_NAME: ${DBSERVICENAME}
+    networks:
+      - oracle-net
+    build:
+      # Explicitly set the folder containing the Dockerfile
+      context: ../../projects/PRI/modules/PRI
+      dockerfile: container_application_deployment/Dockerfile
+    # define the mounted volumes for the PRI apps
+    volumes:
+      - "pri_logs:/usr/src/app/logs"
+      - "../../projects/PRI/modules/PRI/src/frontend:/var/www/html"
+      - "../../projects/PRI/modules/PRIsrc/backend/GIM:/usr/src/app/GIM"
+      - "../../projects/PRI/modules/PRI/src/backend/RIA:/usr/src/app/RIA"
+      - "../../projects/PRI/modules/PRI/src/backend/shared:/usr/src/app/shared"
+      - "../../projects/PRI/modules/PRI/modules/php-shared-library:/usr/src/app/dependencies"
+      - "../../projects/PRI/modules/PRI/modules/php-shared-library:/var/www/html/res/php-shared-library"
+networks:
+  oracle-net:

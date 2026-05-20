@@ -10,3 +10,18 @@ ORACLE_ADMIN_USER=SYS
 # define DSC credentials
 DSC_USER=DSC
 DSC_PWD="YOUR_DSC_PASSWORD"
+
+# define PRI schema credentials
+DB_PRI_USER="PRI"
+DB_PRI_PASSWORD="YOUR_PRI_PASSWORD"
+
+# GIM schema credentials
+DB_GIM_USER="PRI_GIM_APP"
+DB_GIM_PASSWORD="YOUR_GIM_PASSWORD"
+
+# RIA schema credentials
+DB_RIA_USER="PRI_RIA_APP"
+DB_RIA_PASSWORD="YOUR_RIA_PASSWORD"
+
+# define the git api key for refreshing the database
+GIT_API_KEY='YOUR_API_KEY'
