@@ -4,7 +4,7 @@
 
 	# Container Variables That Must Be Unique For A Given Code Implementation To Allow Concurrent Runs
 		# the project name, this must be unique to run more than one instance of CODE on a given container host machine, this will determine the container name and the folder name for the working copy of the repository on the server
-		# Example: COMPOSE_PROJECT_NAME=code_dsc
+		COMPOSE_PROJECT_NAME=code_pri
 
 		#--- Container Port Configuration ---
 		# Example: DB_HOST_PORT=1521
