@@ -38,7 +38,7 @@ services:
     volumes:
       - "pri_logs:/usr/src/app/logs"
       - "../../projects/PRI/modules/PRI/src/frontend:/var/www/html"
-      - "../../projects/PRI/modules/PRIsrc/backend/GIM:/usr/src/app/GIM"
+      - "../../projects/PRI/modules/PRI/src/backend/GIM:/usr/src/app/GIM"
       - "../../projects/PRI/modules/PRI/src/backend/RIA:/usr/src/app/RIA"
       - "../../projects/PRI/modules/PRI/src/backend/shared:/usr/src/app/shared"
       - "../../projects/PRI/modules/PRI/modules/php-shared-library:/usr/src/app/dependencies"

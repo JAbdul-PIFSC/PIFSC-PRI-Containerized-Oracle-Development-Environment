@@ -7,15 +7,15 @@
 		COMPOSE_PROJECT_NAME=code_pri
 
 		#--- Container Port Configuration ---
-		DB_HOST_PORT=1521
-		ORDS_HOST_PORT=8181
+		# DB_HOST_PORT=1521
+		# ORDS_HOST_PORT=8181
 
 	# define if the ORDS service is enabled (required for Apex/ORDS functionality)
-	ORDS_ENABLED="yes"
+	# ORDS_ENABLED="yes"
 
 	#--- APEX Configuration ---
 	# Set the target APEX version here, if this variable is not defined apex will not be installed
-	TARGET_APEX_VERSION=22.1
+	# TARGET_APEX_VERSION=22.1
 
 	#--- Primary schema created by deployment script, used to check if the database is installed. If the APP_SCHEMA_NAME exists then do not run the database initialization processes ---
 	APP_SCHEMA_NAME=PRI
