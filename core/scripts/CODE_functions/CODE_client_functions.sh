@@ -277,9 +277,13 @@ function code_client_execute_container_scripts ()
 		# define the global variables so they can be exported
 		local env_var_string="$(cds_shared_generate_ssh_env_vars_string_from_array_keys "${arg_array}" "compose_project_name" "db_host_port" "ords_host_port" "db_image" "ords_image" "target_apex_version" "app_schema_name" "priv_user" "compose_file" "stack_name" "network_name" "rem_vol" "script_action" "ords_enabled")"
 
-		# add the custom environment variables to the env_var_string variable
-		env_var_string+=" $(cds_shared_generate_ssh_env_vars_string ${CUSTOM_ENV_VARS[@]})"
-		echo "The value of the env_var_string is: ${env_var_string}"
+		# add the CUSTOM_ENV_VARS environment variables to the $env_var_string if there are any elements in the array
+		if (( ${#CUSTOM_ENV_VARS[@]} > 0 )); then
+			# add the custom environment variables to the env_var_string variable
+			env_var_string+=" $(cds_shared_generate_ssh_env_vars_string ${CUSTOM_ENV_VARS[@]})"
+		fi
+
+		# echo "DEBUG: The value of the env_var_string is: ${env_var_string}"
 
 		# assign the value of the process_secrets variable based on the script action value
 		if [[ "${script_action}" == "deploy" ]]; then
