@@ -30,6 +30,9 @@ function main()
 		["projects_path"]="${PROJECTS_PATH}"
 		["project_linear_dependencies_var"]="PROJECT_LINEAR_DEPENDENCIES"
 	)
+	
+	echo "The environment variable values are:"
+	env
 
 	# deploy the container on the container host using a privileged account
 	code_host_execute_container_scripts_elev_privs "host_execute_container_elev_privs_scripts_args"
