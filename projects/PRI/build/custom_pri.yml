@@ -43,7 +43,5 @@ services:
       - "../../projects/PRI/modules/PRI/src/backend/shared:/usr/src/app/shared"
       - "../../projects/PRI/modules/PRI/modules/php-shared-library:/usr/src/app/dependencies"
       - "../../projects/PRI/modules/PRI/modules/php-shared-library:/var/www/html/res/php-shared-library"
-    ports:
-      - "0.0.0.0:5030:80"
 networks:
   oracle-net:
