@@ -24,9 +24,6 @@ function main()
 			["project_linear_dependencies_var"]="PROJECT_LINEAR_DEPENDENCIES"
 		)
 
-	echo "The value of the environment variables is: "
-	env
-
 	# Execute the database orchestration scripts, passing the secure vault by name
 	code_container_deploy_database_scripts "deploy_database_scripts_func_args"
 }
