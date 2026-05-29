@@ -28,6 +28,10 @@ function main()
 		["projects_path"]="${PROJECTS_PATH}"
 		["project_linear_dependencies_var"]="PROJECT_LINEAR_DEPENDENCIES"
 	)
+	
+	echo "running host_execute_CODE_scripts.sh, environment variables:"
+
+	env
 
 	# initialize and build/run the container on the host machine with the specified function arguments:
 	code_host_execute_container_scripts "host_execute_container_scripts_args"
