@@ -45,7 +45,7 @@ function code_host_execute_container_scripts()
 	local env_block="${arg_ref[env_block]}"
 	
 	# add any custom environment variables to the block
-	env_block+="$(cds_shared_generate_export_env_vars_block ${CUSTOM_ENV_VARS[@]})"
+	env_block+=" $(cds_shared_generate_export_env_vars_block ${CUSTOM_ENV_VARS[@]})"
 
 	echo "DEBUG: The value of the env_block is: ${env_block}"
 
