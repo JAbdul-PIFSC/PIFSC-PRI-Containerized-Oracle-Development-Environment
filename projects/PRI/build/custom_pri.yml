@@ -45,7 +45,7 @@ services:
       - "../../projects/PRI/modules/PRI/modules/php-shared-library:/var/www/html/res/php-shared-library"
     ports:
       - target: 80
-        published: ${PRI_APP_PORT}
+        published: ${CONTAINER_APP_PORT}
         protocol: tcp
         mode: host
 networks:
