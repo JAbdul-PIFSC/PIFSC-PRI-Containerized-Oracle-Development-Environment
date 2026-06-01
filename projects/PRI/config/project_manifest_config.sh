@@ -17,7 +17,7 @@
 
 	# define the array of non-sensitive environment variable names that are exported for use in the container
 	CUSTOM_ENV_VARS+=("CRON_SCHEDULE")
-	CUSTOM_ENV_VARS+=("PRI_APP_PORT")
+	CUSTOM_ENV_VARS+=("CONTAINER_APP_PORT")
 
 	# define the array of compose files that are used by the individual projects (specify the path relative to the core/build directory
 	
