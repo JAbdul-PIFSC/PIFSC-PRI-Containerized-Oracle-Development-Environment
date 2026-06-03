@@ -50,7 +50,7 @@ function code_host_execute_container_scripts()
 		env_block+=$'\n'"$(cds_shared_generate_export_env_vars_block ${CUSTOM_ENV_VARS[@]})"
 	fi
 
-	# echo "DEBUG: The value of the env_block is: ${env_block}"
+	echo "DEBUG: The value of the env_block is: ${env_block}"
 
 	# declare the function arguments as a local variable
 	local -A func_args=(
