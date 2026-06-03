@@ -283,7 +283,7 @@ function code_client_execute_container_scripts ()
 			env_var_string+=" $(cds_shared_generate_ssh_env_vars_string ${CUSTOM_ENV_VARS[@]})"
 		fi
 
-		echo "DEBUG: The value of the env_var_string is: ${env_var_string}"
+		# echo "DEBUG: The value of the env_var_string is: ${env_var_string}"
 
 		# assign the value of the process_secrets variable based on the script action value
 		if [[ "${script_action}" == "deploy" ]]; then
