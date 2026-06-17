@@ -6,4 +6,4 @@
 CRON_SCHEDULE="30 7 * * 1-5"
 
 # define the port to access the PRI application on
-CONTAINER_APP_PORT="5050"
+CONTAINER_APP_PORT="50200"

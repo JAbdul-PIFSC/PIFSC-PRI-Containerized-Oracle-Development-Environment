@@ -73,8 +73,8 @@ The PIFSC Containerized Oracle Developer Environment (CODE) project was develope
 -   Refer to the CODE [Connection Information](../../../../core/docs/CODE%20Documentation.md#connection-information) documentation for details
     -   The individual account passwords can be found in the /secrets/secrets.sh file 
 -   The PRI container application is available at the following URL by default: 
-    -   URL: http://localhost:5010
-    -   \*Note the port can be changed by updating the [custom_pri.yml](../build/custom_pri.yml) configuration file
+    -   URL: http://localhost:50200
+    -   \*Note: the port can be changed by updating CONTAINER_APP_PORT variable value in the [pri_runtime_config.sh](../config/pri_runtime_config.sh) configuration file
 
 ## Security Features
 -   Refer to the CODE [Security Features](../../../../core/docs/CODE%20Documentation.md#security-features) documentation for details
